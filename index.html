@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="title">
+        <i class="fa-solid fa-clipboard-list fa-lg"></i>
+        <h3>To-Do List</h3>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-moon" id="dark" onclick="darkMode()"></i>
+        <i class="fa-regular fa-sun" id="white" onclick="whiteMode()"></i>
+        <div class="delete" onclick="deleteList()">
+          <i class="fa-solid fa-trash"></i>
+          <button class="btn-delete">Delete List</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="wrapper-container">
+        <div class="title-wrapper">
+          <h1>To-Do List</h1>
+          <span class="underline"></span>
+          <p class="color">Manage your daily tasks easily ✨</p>
+        </div>
+        <div class="clock">
+          <div class="cars1">
+            <i class="fa-regular fa-clock fa-sm"></i>
+            <p>Digital Clock</p>
+          </div>
+          <div class="cars2">
+            <div class="hour">
+              <span id="hour">00</span>
+            </div>
+            <div class="colon">
+              <span>:</span>
+            </div>
+            <div class="minute">
+              <span id="minute">00</span>
+            </div>
+            <div class="colon">
+              <span>:</span>
+            </div>
+            <div class="second">
+              <span id="second">00</span>
+            </div>
+          </div>
+          <div class="cars3">
+            <div class="day">
+              <span id="day">00</span>
+            </div>
+            <div class="date">
+              <span id="date">00</span>
+            </div>
+            <div class="month">
+              <span id="month">00</span>
+            </div>
+            <div class="year">
+              <span id="year">00</span>
+            </div>
+          </div>
+          <div class="zona">
+            <span id="zona">WIB</span>
+          </div>
+        </div>
+        <div class="container-input">
+          <div class="box-input">
+            <input type="text" id="input" placeholder="Add a new task" />
+            <div class="btn-add" id="btnAdd" onclick="btnAdd()">
+              <i class="fa-solid fa-plus fa-xs"></i>
+              <button>Create</button>
+            </div>
+          </div>
+          <div class="cars-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
